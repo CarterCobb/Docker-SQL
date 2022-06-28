@@ -1,0 +1,9 @@
+FROM mcr.microsoft.com/mssql/server:2019-latest
+
+RUN mkdir -p /var/opt/mssql/backup
+
+WORKDIR /var/opt/mssql/backup
+
+COPY restore_files/ ./
+
+EXPOSE 1433

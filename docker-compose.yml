@@ -1,0 +1,38 @@
+version: "3.9"
+
+services:
+  db:
+    restart: always
+    container_name: sql-db
+    build:
+      context: ./
+      dockerfile: ${DOCKERFILE_WIN}
+    image: ${SQL_IMG_WIN}
+    ports:
+        - "1433:1433"
+    volumes:
+        - ./restore_files://var/opt/mssql/backup
+    environment:
+        MSSQL_SA_PASSWORD: "Password.1"
+        ACCEPT_EULA: "Y"
+        MSSQL_PID: "Developer"
+    networks:
+      - HLG_SQL
+    command:
+    - /bin/bash
+    - -c 
+    - |
+      # Launch MSSQL and send to background
+      /opt/mssql/bin/sqlservr &
+      # Wait 30 seconds for it to be available
+      sleep 30
+      for foo in /var/opt/mssql/backup/*.sql
+        do /opt/mssql-tools/bin/sqlcmd -U sa -P $$MSSQL_SA_PASSWORD -l 30 -e -i $$foo
+      done
+      # So that the container doesn't shut down, sleep this thread
+      sleep infinity
+networks:
+  HLG_SQL:
+    name: HLG_SQL
+    external: false
+    driver: bridge
