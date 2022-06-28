@@ -33,7 +33,7 @@ As of now the settings are as follows:
 
 ## Development goals
 
-This project has yet to be tested on a WondowsOS system. It also is failing to call the `resotre.sql` file once it spins up on MacOS. These are currently being worked on
+This project has yet to be tested on a WondowsOS system. It also is failing to call the `restore.sql` file once it spins up on MacOS. These are currently being worked on
 
 ## Additional Details
 
