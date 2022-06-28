@@ -9,8 +9,9 @@ This small project brings up and restores a SQL database in a docker container.
 
 - Docker insalled [download link](https://www.docker.com/products/docker-desktop)
 - WSL2 installed (WindowsOS Only) [download link](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi)
-
-- (_Optional_) This repo was created around the AdventureWorks2019 SQL database found [here](https://github.com/CarterCobb/Docker-SQL/blob/master/restore_files/restore.sql). Download `AdventureWorks2019.bak` and place it into the `restore_files` folder.
+  - You may need to open `Turn Windows Features On or Off` from the start menu and turn on these two items:
+    - `Virtual Machine Platform.`
+    - `Windows Subsystem for Linux`
 
 ## Running the project
 
