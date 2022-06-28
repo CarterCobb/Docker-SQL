@@ -12,6 +12,7 @@ This small project brings up and restores a SQL database in a docker container.
   - You may need to open `Turn Windows Features On or Off` from the start menu and turn on these two items:
     - `Virtual Machine Platform.`
     - `Windows Subsystem for Linux`
+    - `Hyper-V`
 
 ## Running the project
 
