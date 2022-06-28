@@ -3,7 +3,7 @@
 This small project brings up and restores a SQL database in a docker container.
 
 > It's still under development, Features may be added or removed.
-> see development notes [here]()
+> see development notes [here](https://github.com/CarterCobb/Docker-SQL#development-goals)
 
 ## Prerequisites
 
@@ -14,6 +14,8 @@ This small project brings up and restores a SQL database in a docker container.
 
 Simply add the `.bak` file to the `restore_files` folder.
 _You may need to update the `restore.sql` file if the database properties change_
+
+The project is currently setup to run on WindowsOS. To change to MacOS, simply change all instances of `${*_WIN}` to `${$_MAC}` in [`docker_compose.yml`](https://github.com/CarterCobb/Docker-SQL/blob/master/docker-compose.yml)
 
 - Run `docker-compose up -d` in the terminal cd'ed into the root dir of the project.
 
