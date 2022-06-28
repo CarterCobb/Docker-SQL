@@ -10,6 +10,9 @@ This small project brings up and restores a SQL database in a docker container.
 - Docker insalled [download link](https://www.docker.com/products/docker-desktop)
 - WSL2 installed (WindowsOS Only) [download link](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi)
 
+
+- (_Optional_) This repo was created around the AdventureWorks2019 SQL database found [here](https://github.com/CarterCobb/Docker-SQL/blob/master/restore_files/restore.sql). Download `AdventureWorks2019.bak` and place it into the `restore_files` folder.
+
 ## Running the project
 
 Simply add the `.bak` file to the `restore_files` folder.
@@ -35,8 +38,10 @@ As of now the settings are as follows:
 
 This project has yet to be tested on a WindowsOS system. It also is failing to call the `restore.sql` file once it spins up on MacOS. These are currently being worked on.
 
+If all else fails, spin up the container and run the contents of [`restore.sql`](https://github.com/CarterCobb/Docker-SQL/blob/master/restore_files/restore.sql) in the database after connecting to it in SQL Server.
+
 ## Additional Details
 
-This project was created by [Carter Cobb](https://linktr.ee/cjcobb) and was intended to be used as an aid during development on a system for [Harris Local Government](https://www.harrislocalgov.com). This project is not the intellectual property or Harris Local Goverment.
+This project was created by [Carter Cobb](https://linktr.ee/cjcobb) and was intended to be used as an aid during development on a system for [Harris Local Government](https://www.harrislocalgov.com). This project is not the intellectual property of Harris Local Goverment.
 
 © Copyright Carter Cobb 2022
