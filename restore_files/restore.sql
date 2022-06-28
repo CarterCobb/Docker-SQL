@@ -1,9 +1,9 @@
 PRINT 'Restoring Database'
 
-RESTORE FILELISTONLY FROM DISK=N'/var/opt/mssql/backup/AdventureWorks2019.bak'  
+RESTORE FILELISTONLY FROM DISK=N'/var/opt/mssql/backup/HarrisOnlinePropertyPortal.bak'  
 GO 
 
-RESTORE DATABASE AdventureWorks2017 FROM DISK=N'/var/opt/mssql/backup/AdventureWorks2019.bak' WITH  
-MOVE 'AdventureWorks2017' to '/var/opt/mssql/data/AdventureWorks2017.mdf',  
-MOVE 'AdventureWorks2017_log' to '/var/opt/mssql/data/AdventureWorks2017_log.ldf'  
+RESTORE DATABASE HarrisOnlinePropertyPortal FROM DISK=N'/var/opt/mssql/backup/HarrisOnlinePropertyPortal.bak' WITH  
+MOVE 'HarrisOnlinePropertyPortal' to '/var/opt/mssql/data/HarrisOnlinePropertyPortal.mdf',  
+MOVE 'HarrisOnlinePropertyPortal_log' to '/var/opt/mssql/data/HarrisOnlinePropertyPortal_log.ldf'  
 GO  
