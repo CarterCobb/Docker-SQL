@@ -31,9 +31,9 @@ As of now the settings are as follows:
 - Username is `sa`
 - Password is `Password.1`
 
-## Development goals
+## Development Notes
 
-This project has yet to be tested on a WondowsOS system. It also is failing to call the `restore.sql` file once it spins up on MacOS. These are currently being worked on
+This project has yet to be tested on a WindowsOS system. It also is failing to call the `restore.sql` file once it spins up on MacOS. These are currently being worked on.
 
 ## Additional Details
 
