@@ -7,7 +7,7 @@ This small project brings up and restores a SQL database in a docker container.
 
 ## Prerequisites
 
-- Docker insalled [download link](https://www.docker.com/products/docker-desktop)
+- Docker intsalled [download link](https://www.docker.com/products/docker-desktop)
 - WSL2 installed (WindowsOS Only) [download link](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi)
   - You may need to open `Turn Windows Features On or Off` from the start menu and turn on these items:
     - `Virtual Machine Platform.`
