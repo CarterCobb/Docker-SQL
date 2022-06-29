@@ -9,10 +9,11 @@ This small project brings up and restores a SQL database in a docker container.
 
 - Docker insalled [download link](https://www.docker.com/products/docker-desktop)
 - WSL2 installed (WindowsOS Only) [download link](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi)
-  - You may need to open `Turn Windows Features On or Off` from the start menu and turn on these two items:
+  - You may need to open `Turn Windows Features On or Off` from the start menu and turn on these items:
     - `Virtual Machine Platform.`
     - `Windows Subsystem for Linux`
     - `Hyper-V`
+  - You may also need to enable `Virtualization` in your BIOS settings
 
 ## Running the project
 
