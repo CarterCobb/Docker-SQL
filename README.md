@@ -38,9 +38,9 @@ As of now the settings are as follows:
 
 ## Development Notes
 
-This project has yet to be tested on a WindowsOS system. It also is failing to call the `restore.sql` file once it spins up on MacOS. These are currently being worked on.
+This project is 100% working on all WindowsOS systems. It is failing to call the `restore.sql` file once it spins up on MacOS.
 
-If all else fails, spin up the container and run the contents of [`restore.sql`](https://github.com/CarterCobb/Docker-SQL/blob/master/restore_files/restore.sql) in the database after connecting to it in SQL Server.
+If all else fails on MacOS, spin up the container and run the contents of [`restore.sql`](https://github.com/CarterCobb/Docker-SQL/blob/master/restore_files/restore.sql) in the database after connecting to it in SQL Server.
 
 ## Additional Details
 
