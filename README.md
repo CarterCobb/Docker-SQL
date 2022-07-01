@@ -3,7 +3,7 @@
 This small project brings up and restores a SQL database in a docker container.
 
 > It's still under development, Features may be added or removed.
-> see development notes [here](https://github.com/CarterCobb/Docker-SQL#development-goals)
+> see development notes [here](https://github.com/CarterCobb/Docker-SQL#development-notes)
 
 ## Prerequisites
 
